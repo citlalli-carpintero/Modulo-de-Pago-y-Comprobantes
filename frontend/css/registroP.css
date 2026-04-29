@@ -1,0 +1,118 @@
+:root {
+    --primary-blue: #4353ff;
+    --text-dark: #333333;
+    --text-light: #666666;
+    --bg-gray: #f8f9fa;
+    --border-color: #e0e0e0;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--white); 
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: var(--white);
+    width: 100%;
+    min-height: 100vh; 
+    padding: 60px; 
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    max-width: 1200px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.back-button {
+    text-decoration: none;
+    color: var(--text-dark);
+    font-size: 24px;
+    margin-right: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: var(--text-dark);
+    margin: 0;
+}
+
+form {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px; /* Más espacio entre columnas */
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+input, select {
+    width: 100%;
+    padding: 15px;
+    border: 1.5px solid var(--border-color);
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: var(--text-dark);
+    box-sizing: border-box;
+    outline: none;
+    background-color: var(--bg-gray);
+}
+
+input:focus, select:focus {
+    border-color: var(--primary-blue);
+    background-color: var(--white);
+}
+
+.upload-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 16px;
+    padding: 60px;
+    text-align: center;
+    background-color: #fcfdfe;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.upload-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.btn-submit {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 40px auto 0 auto; 
+    background-color: var(--primary-blue);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
